@@ -1,0 +1,68 @@
+:root {
+	font-family: Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+	color: blueviolet;
+}
+
+div {
+	position: relative;
+}
+
+p {
+	font-size: 15px;
+	color: white;
+	background-color: seagreen;
+	border: 4px solid black;
+	border-radius: 10px;
+	min-height: 250px;
+	margin: 10px;
+	padding: 50px 5px 5px 5px;
+}
+
+.title {
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: black;
+	border: 4px solid black;
+	border-radius: 10px;
+	min-height: 20px;
+	padding: 5px;
+}
+
+.row {
+	width: 100%;
+}
+
+/********** Desktop **********/
+
+@media (min-width: 992px) {
+	.desktop{
+	    float: left;
+	    width: 33.33%;
+	}
+}
+
+/********** Tablet **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.tablet{
+		float: left;
+		width: 50%;
+  }
+  .row > .tablet:nth-child(3) {
+    width: 100%;
+    clear: both;   /* forces it onto its own row */
+  }
+}
